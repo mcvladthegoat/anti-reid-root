@@ -1,0 +1,47 @@
+{
+  "name": "anti-reid-root",
+  "version": "1.0.0",
+  "description": "Geomark aggregator for Telegram public chats Anti_reid (web app)",
+  "scripts": {
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "watch": "webpack --watch",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "keywords": [],
+  "author": "mcvladthegoat",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mcvladthegoat/anti-reid-root.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
+    "eslint": "^5.3.0",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "style-loader": "^0.20.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "react-router": "^4.3.1",
+    "react-router-config": "^1.0.0-beta.4",
+    "react-yandex-maps": "^2.2.0"
+  }
+}
