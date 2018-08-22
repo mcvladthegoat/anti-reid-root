@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
-// Using CSS Modules mechanism
 import styles from "../assets/css/style.css";
 
 export class YandexMapComponent extends Component {
@@ -29,7 +28,7 @@ export class YandexMapComponent extends Component {
     }
 
     render() {
-        const { defaultCoordinates: center, renderPoints } = this.props;
+        const { defaultCoordinates: center } = this.props;
         let mapState = {
             center: Object.keys(center).map(k => center[k]),
             zoom: 10
@@ -38,7 +37,7 @@ export class YandexMapComponent extends Component {
         return (
             <YMaps>
                 <Map state={mapState}>
-                    {renderPoints()}
+                    {this.renderPoints()}
                 </Map>
             </YMaps>
         );
@@ -55,7 +54,7 @@ YandexMapComponent.propTypes = {
         long: PropTypes.number
     }),
     placeMarkStyle: PropTypes.shape({ //in future updates...
-        iconLayout: 'default#image',
+        iconLayout: PropTypes.string,
         iconImageHref: PropTypes.string,
         iconImageSize: PropTypes.array,
         iconImageOffset: PropTypes.array
